@@ -10,7 +10,7 @@ const int queen = 8;
 
 void bishopMovement(int move) {
     if (move > 0) {
-        printf("direita, cima");
+        printf("direita, cima\n");
         return bishopMovement(move - 1);
     }
 }
@@ -26,6 +26,7 @@ int main() {
     // for(int i = 0; i < bishop; i++) {
     //     printf("direita, cima\n");
     // }
+    bishopMovement(bishop);
 
     
 
